@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Repository.Repositories;
 
-namespace Api.IoT
+namespace IoT
 {
     public static class RepositoriesIoT
     {

@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aplication", "Service\Aplic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{665221BF-70E4-4CA2-9010-9BA89CD12896}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{43D4C14D-15E6-4799-ACA4-053A5908EC82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoT", "IoT\IoT.csproj", "{97831CDA-852A-4DC1-BBFE-F172593707EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{665221BF-70E4-4CA2-9010-9BA89CD12896}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{665221BF-70E4-4CA2-9010-9BA89CD12896}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{665221BF-70E4-4CA2-9010-9BA89CD12896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43D4C14D-15E6-4799-ACA4-053A5908EC82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43D4C14D-15E6-4799-ACA4-053A5908EC82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43D4C14D-15E6-4799-ACA4-053A5908EC82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43D4C14D-15E6-4799-ACA4-053A5908EC82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97831CDA-852A-4DC1-BBFE-F172593707EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97831CDA-852A-4DC1-BBFE-F172593707EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97831CDA-852A-4DC1-BBFE-F172593707EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97831CDA-852A-4DC1-BBFE-F172593707EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

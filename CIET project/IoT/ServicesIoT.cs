@@ -2,7 +2,7 @@
 using Domain.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Api.IoT
+namespace IoT
 {
     public static class ServicesIoT
     {

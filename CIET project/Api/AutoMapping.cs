@@ -2,7 +2,7 @@
 using AutoMapper;
 using Domain.Entities;
 
-namespace Api.IoT
+namespace Api
 {
     public class AutoMapping : Profile
     {

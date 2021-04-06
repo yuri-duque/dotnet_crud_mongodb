@@ -7,10 +7,10 @@ namespace Domain.Entities
     [Table("Products")] // configure collection name
     public class Product : Domain
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public decimal Price { get; set; }
-        public EStatus Status { get; set; }
+        public string Name { get; private set; }
+        public string Description { get; private set; }
+        public decimal Price { get; private set; }
+        public EStatus Status { get; private set; }
 
         public Product(string id, string name, string description, decimal price, EStatus status, DateTime dateCreated, DateTime? dateUpdated) : base(id, dateCreated, dateUpdated)
         {
@@ -32,6 +32,12 @@ namespace Domain.Entities
         {
             Id = product.Id;
             DateCreated = product.DateCreated;
+            DateUpdate = DateTime.Now;
+        }
+
+        public void SetName(string name)
+        {
+            Name = name;
             DateUpdate = DateTime.Now;
         }
     }

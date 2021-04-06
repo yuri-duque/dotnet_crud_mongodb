@@ -1,10 +1,10 @@
-using Api.IoT;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using IoT;
 
 namespace Api
 {
@@ -29,9 +29,10 @@ namespace Api
 
             services.AddCors();
 
+            services.AddAutoMapper(typeof(AutoMapping));
+
             services
                 .AddMongo()
-                .AddAutoMapping()
                 .AddServices()
                 .AddRepositories();
         }

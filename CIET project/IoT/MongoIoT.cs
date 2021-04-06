@@ -4,7 +4,7 @@ using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using Repository.Context;
 
-namespace Api.IoT
+namespace IoT
 {
     public static class MongoIoT
     {
