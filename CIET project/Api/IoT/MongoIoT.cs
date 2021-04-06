@@ -10,12 +10,8 @@ namespace Api.IoT
     {
         public static IServiceCollection AddMongo(this IServiceCollection services)
         {
-            try // adicionado try pois não é possovel registrar um serializador para o mesmo type mais de uma vez
-            {
-                // setando a data para o timezone do Brasil
-                BsonSerializer.RegisterSerializer(DateTimeSerializer.LocalInstance);
-            }
-            catch { }
+            // setando a data para o timezone do Brasil
+            BsonSerializer.RegisterSerializer(DateTimeSerializer.LocalInstance);
 
             services.AddSingleton<IMongoContext, MongoContext>();
 

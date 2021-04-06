@@ -1,17 +1,14 @@
-﻿using Api.ViewModels;
-using AutoMapper;
-using Domain.Entities;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace Api.IoT
 {
-    public class AutomapperIot : Profile
+    public static class AutoMapperIoT
     {
-        public AutomapperIot()
+        public static IServiceCollection AddAutoMapping(this IServiceCollection services)
         {
-            CreateMap<ProductInsertViewModel, Product>();
-            CreateMap<ProductUpdateViewModel, Product>();
-            CreateMap<Product, ProductListViewModel>();
-            CreateMap<Product, ProductViewModel>();
+            services.AddAutoMapper(typeof(AutoMapping));
+
+            return services;
         }
     }
 }
