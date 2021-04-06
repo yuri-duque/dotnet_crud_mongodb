@@ -1,0 +1,4 @@
+﻿"generate-code-coverge": 'dotnet test --collect:"XPlat Code Coverage" -r ./Tests/TestResults',
+
+"generate-repot-coverge": 'reportgenerator reportgenerator "-reports:./Tests/TestResults/{{PATH_NAME}}/coverage.cobertura.xml" "-targetdir:./Tests/TestResults/{{PATH_NAME}}/coveragereport" -reporttypes:Html'
+

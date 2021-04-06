@@ -46,9 +46,6 @@ namespace Aplication.Services
         {
             var baseProduct = await GetById(id);
 
-            if (baseProduct is null)
-                throw new NotFoundException("Product not found!");
-
             product.SetUpdate(baseProduct);
 
             //if (!product.Validate())
@@ -62,9 +59,6 @@ namespace Aplication.Services
         public async Task<Product> Delete(string id)
         {
             var product = await GetById(id);
-
-            if (product is null)
-                throw new NotFoundException("Product not found!");
 
             await _productRepository.Delete(id);
 
